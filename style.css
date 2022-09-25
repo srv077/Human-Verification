@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    align-content:center ;
+    justify-content: center;
+    margin:0px;
+    background-color: black;
+    color:antiquewhite;
+}
+#main{
+    display: block;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+#card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    background-color: rgb(45, 148, 45);
+    width:600px;
+    height:400px;
+
+}
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    background-color: rgb(253, 254, 254);
+    width:180px;
+    height:180px;
+}
+.selected{
+    width:175px;
+    height:180px;
+    border:red 5px solid;
+}
+.img{
+    width:150px;
+    height:150px;
+    border:0;
+}
+button{
+    margin-top:50px;
+    padding:10px;
+    text-align: center;
+    width:100px;
+    height:40px;
+    background-color: red;
+    color: antiquewhite;;
+}
+
