@@ -1,4 +1,4 @@
-(function(){
+(function () {
     let imagelist=[
         'img1',  
         'img2',  
@@ -116,6 +116,10 @@
         if(maincontainer.contains(para)){
             maincontainer.removeChild(para);
         }
+        while (cardcontainer.firstChild) {
+            cardcontainer.removeChild(cardcontainer.lastChild);
+        }
+        getcardinside();
     }
     function changeclass(resetname){
         resetname.classList.remove('selected');
@@ -123,7 +127,9 @@
     }
     verifybutton.addEventListener('click',verifybuttonclick);
     resetbutton.addEventListener('click',resetbuttonclick);   
-})();
+  })();
+    
+
 
 // let imagelist=[
 //     'img1',  
